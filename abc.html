@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Practice for main window</title>
+	<script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
+	
+</head>
+<body>
+	<script type="text/javascript">
+		//creating main window for game
+		var mygame=new Phaser.Game(800,500,Phaser.CANVAS,'',{
+			preload:preload,create:create,update:update
+		});
+		function preload(argument) {
+			mygame.load.image('sky','C:\wamp64\www\Practice\ba.jpg');
+		}
+		function create(){
+			mygame.add.sprite(150,150,'star');
+
+		}
+		function update(){
+			
+		}
+	</script>
+
+</body>
+</html>
